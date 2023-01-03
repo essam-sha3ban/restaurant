@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>restaurant</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--   start header   -->
+
+    <header>
+      <div class="container">
+        <a class="logo">
+          <i class="fa-solid fa-utensils"></i>
+          Pesto.
+        </a>
+        <div class="navBar">
+          <a href="#home" class="active">Home</a>
+          <a href="#dishes">dishes</a>
+          <a href="#about">about</a>
+          <a href="#menu">menu</a>
+          <a href="#review">review</a>
+          <a href="#order">order</a>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-bars" id="menu-bars"></i>
+          <i class="fa-solid fa-magnifying-glass" id="search"></i>
+          <a href="" class="fa-solid fa-heart"></a>
+          <i href="" class="fa-solid fa-cart-shopping "></i>
+        </div>
+      </div>
+      <div class="cart">
+        <h2>your shopping</h2>
+        <div class="cart-content">
+          <!-- <div class="item">
+            <img src="images/dish-1.png" class="item-img" alt="">
+            <div class="info">
+              <div class="item-name">zozaty</div>
+              <div class="item-price">15.00$</div>
+              <input type="number" class="quantity">            
+            </div>
+            <i class="fa-solid fa-trash item-remove"></i>
+          </div> -->
+          
+  
+        </div>
+  <div class="buy">
+    <div class="total">
+      <h2>total:-</h2>
+      <div class="total-price">0$</div>
+    </div>
+    <div class="btn btn-buy">buy now</div>
+  </div>
+      </div>
+    </header>
+    <!--   end header   -->
+   
+
+    <!--   start search   -->
+    <form action="" id="search-form">
+      <input type="search" id="search-box" placeholder="search here..." />
+      <label for="serche-box" class="fa-solid fa-magnifying-glass"></label>
+      <i class="fa-solid fa-close" id="close"></i>
+    </form>
+    <!--   end search   -->
+
+    <!--  start home   -->
+    <div class="home" id="home">
+      <div class="mySwiper container">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>our special dish</span>
+              <h3>spicy noodles</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                magnam dolores mollitia?
+              </p>
+              <a href="" class="btn">order now</a>
+            </div>
+            <div class="images">
+              <img src="images/home-img-1.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>our special dish</span>
+              <h3>fried chicken</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                magnam dolores mollitia?
+              </p>
+              <a href="" class="btn">order now</a>
+            </div>
+            <div class="images">
+              <img src="images/home-img-2.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>our special dish</span>
+              <h3>hot pizza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                magnam dolores mollitia?
+              </p>
+              <a href="" class="btn">order now</a>
+            </div>
+            <div class="images">
+              <img src="images/home-img-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!--  end home   -->
+
+    <!--  start Our Dishes   -->
+
+   <div class="section">
+    <div class="dishes" id="dishes">
+      <div class="title">
+        <h3 class="title-product">Our Dishes</h3>
+        <h1>POPULAR DISHES</h1>
+      </div>
+      <div class="container">
+        <div class="dishes-box">
+          <div class="image">
+            <img src="images/dish-1.png"  class="img-product"alt="" />
+          </div>
+          <div class="info">
+            <h2 class="title-product">CHICKEN SANDWICH</h2>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+
+              <div class="icons">
+                <a href="" class="fa-solid fa-heart"></a>
+                <a href="" class="fa-solid fa-eye"></a>
+              </div>
+            </div>
+            <span class="price-product">15.80 $</span>
+            <div class="btn add-to-cart">add to cart</div>
+          </div>
+        </div>
+        <div class="dishes-box">
+          <div class="image">
+            <img src="images/dish-2.png" class="img-product" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="title-product">CHICKEN TENDERS</h2>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <div class="icons">
+                <a href="" class="fa-solid fa-heart"></a>
+                <a href="" class="fa-solid fa-eye"></a>
+              </div>
+            </div>
+            <span class="price-product">15.80 $</span>
+            <div class="btn add-to-cart">add to cart</div>
+          </div>
+        </div>
+        <div class="dishes-box">
+          <div class="image">
+            <img src="images/dish-3.png"  class="img-product" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="title-product">chicken</h2>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <div class="icons">
+                <a href="" class="fa-solid fa-heart"></a>
+                <a href="" class="fa-solid fa-eye"></a>
+              </div>
+            </div>
+            <span class="price-product">15.80 $</span>
+            <div class="btn add-to-cart">add to cart</div>
+          </div>
+        </div>
+        <div class="dishes-box">
+          <div class="image">
+            <img src="images/dish-4.png" class="img-product" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="title-product">pizza</h2>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <div class="icons">
+                <a href="" class="fa-solid fa-heart"></a>
+                <a href="" class="fa-solid fa-eye"></a>
+              </div>
+            </div>
+            <span class="price-product">15.80 $</span>
+            <div class="btn add-to-cart">add to cart</div>
+          </div>
+        </div>
+        <div class="dishes-box">
+          <div class="image">
+            <img src="images/dish-5.png"class="img-product" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="title-product">MCFLURRY MCDONALD'S</h2>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <div class="icons">
+                <a href="" class="fa-solid fa-heart"></a>
+                <a href="" class="fa-solid fa-eye"></a>
+              </div>
+            </div>
+            <span class="price-product">15.80 $</span>
+            <div class="btn add-to-cart">add to cart</div>
+          </div>
+        </div>
+        <div class="dishes-box">
+          <div class="image">
+            <img src="images/dish-6.png"class="img-product" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="title-product">CHICKEN NUGGETS</h2>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <div class="icons">
+                <a href="" class="fa-solid fa-heart"></a>
+                <a href="" class="fa-solid fa-eye"></a>
+              </div>
+            </div>
+            <span class="price-product">15.80 $</span>
+            <div class="btn add-to-cart">add to cart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!--  end Our Dishes   -->
+
+    <!--  start about   -->
+  <div class="section">
+      <div class="about" id="about">
+    <div class="title">
+      <h3>About Us</h3>
+      <h1>WHY CHOOSE US?</h1>
+      <div class="container">
+        <div class="images">
+          <img src="images/about-img.png" alt="" />
+        </div>
+        <div class="info">
+          <h2>Best Food In The Country</h2>
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore,
+            Sequi Corrupti Corporis Quaerat Voluptatem Ipsam Neque Labore Modi
+            Autem, Saepe Numquam Quod Reprehenderit Rem? Tempora Aut Soluta
+            Odio Corporis Nihil!Lorem Ipsum Dolor Sit Amet, Consectetur
+            Adipisicing Elit. Aperiam, Nemo. Sit Porro Illo Eos Cumque
+            Deleniti Iste Alias, Eum Natu
+          </p>
+          <div class="icons-container">
+            <div>
+              <i class="fa-solid fa-truck"></i>
+              <span>Free Delivery</span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-dollar-sign"></i>
+              <span>Easy Payments</span>
+            </div>
+
+            <div>
+              <i class="fa-solid fas fa-headset"></i>
+              <span>24/7 Service</span>
+            </div>
+          </div>
+          <div class="btn">Learn More</div>
+        </div>
+      </div>
+    </div>
+      </div>
+  </div>
+    <!--  end about   -->
+
+    <!-- start our menu   -->
+   <div class="section">
+    <div class="menu" id="menu">
+      <div class="title">
+        <h3>our menu</h3>
+        <h1>TODAY'S SPECIALITY</h1>
+      </div>
+      <div class="container">
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-1.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">pizza hut</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-2.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">SPICY CHICKEN SANDWICH</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-3.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">spinach white warp</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-4.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product"> pumpkin spice</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-5.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">rolled</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-6.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">mocha cookie</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-7.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">pink drink</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-8.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">strawberry  </h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="images">
+            <img src="images/menu-9.jpg" class="img-product" alt="" />
+          </div>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="icons">
+              <a href="" class="fa-solid fa-heart"></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2 class="title-product">lemonade passion fruit</h2>
+            <p>
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+              Excepturi, Accusantium.
+            </p>
+          </div>
+          <div class="add">
+            <div class="btn add-to-cart">ADd to cart</div>
+            <span class="price-product">12.99$</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   </div>
+    <!--   end our menu   -->
+
+
+    <!--   start review  -->
+   <div class="section">
+    <div class="review" id="review">
+
+      <div class="title">
+        <h3>Customer's Review</h3>
+        <h1>WHAT THEY SAY</h1>
+      </div>
+
+      <div class="container swiper-container review-slide">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide review-box">
+            <i class="fas fa-quote-right"></i>
+          <div class="image">
+            <img src="images/pic-1.png" alt="">
+            <div class="name">
+              <h3>john deo</h3>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+         
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur
+           accusantium ut eius a, explicabo, numquam similique possimus officia
+           quo at adipisci aspernatur tenetur libero? Possimus corporis magni amet eos?
+        </p>
+          </div>
+          <div class="swiper-slide review-box">
+        <div class="image">
+          <img src="images/pic-2.png" alt="">
+          <div class="name">
+            <h3>john deo</h3>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-quote-right"></i>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur
+         accusantium ut eius a, explicabo, numquam similique possimus officia
+         quo at adipisci aspernatur tenetur libero? Possimus corporis magni amet eos?
+      </p>
+          </div>
+
+          <div class="swiper-slide review-box">
+      <div class="image">
+        <img src="images/pic-3.png" alt="">
+        <div class="name">
+          <h3>john deo</h3>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+      <i class="fas fa-quote-right"></i>
+    <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur
+       accusantium ut eius a, explicabo, numquam similique possimus officia
+       quo at adipisci aspernatur tenetur libero? Possimus corporis magni amet eos?
+    </p>
+          </div>
+
+          <div class="swiper-slide review-box">
+    <div class="image">
+      <img src="images/pic-4.png" alt="">
+      <div class="name">
+        <h3>john deo</h3>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+    </div>
+    <i class="fas fa-quote-right"></i>
+  <p>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur
+     accusantium ut eius a, explicabo, numquam similique possimus officia
+     quo at adipisci aspernatur tenetur libero? Possimus corporis magni amet eos?
+  </p>
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+   </div>
+    <!-- end re view -->
+
+
+    <!-- start order -->
+
+    <div class="section">
+      <div class="order" id="order">
+        <div class="title">
+         <h3>order now</h3>
+         <h1>FREE AND FAST</h1>
+       </div>
+     <div class="container">
+     <div class="my-order">
+       <div class="form">
+         <div>
+           <span>your name</span>
+           <input type="text" placeholder="your name">
+           <span>your order</span>
+           <input type="text" placeholder="food name">
+           <span>how much</span>
+           <input type="number" >
+           <span>your adrdress</span>
+           <textarea placeholder="your address"></textarea>
+         </div>
+ 
+         <div>
+           <span>your number phone</span>
+           <input type="number" placeholder="your name">
+           <span>Additional Food</span>
+           <input type="text" placeholder="extra with food">
+           <span>date and time</span>
+           <input type="datetime-local" >
+           <span>your message</span>
+           <textarea  placeholder="your message"></textarea>
+         </div>
+        
+       </div>
+        <div class="btn">order now</div>
+     </div>
+    
+     
+     </div>
+   </div>
+    </div>
+    <!-- end order -->
+
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+
+        <div class="links">
+          <h2>location</h2>
+          <a href="">india</a>
+          <a href="">japan</a>
+          <a href="">egypt</a>
+          <a href="">qater</a>
+          <a href="">paris</a>
+        </div>
+
+        <div class="links">
+          <h2>quick links</h2>
+          <a href="#home">home</a>
+          <a href="#dishes">dishes</a>
+          <a href="#about">about</a>
+          <a href="#menu">menu</a>
+          <a href="#review">review</a>
+          <a href="#order">order</a>
+        </div>
+
+
+        <div class="links">
+          <h2>Contact Info</h2>
+          <a href="">+20127700438</a>
+          <a href="">3essam14@gmail.com</a>
+                
+        </div>
+
+
+        <div class="links">
+          <h2>follow my</h2>
+          <a href="">facebook</a>
+          <a href="">twitter</a>
+          <a href="">instagram</a>
+          <a href="">+linkedin</a>         
+        </div>
+        
+      </div>
+      <hr>
+      <span>create by essam @2022 copyRight</span>
+    </div>
+    <!-- end footer -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="scripts.js"></script>
+  </body>
+</html>
